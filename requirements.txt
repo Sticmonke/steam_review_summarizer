@@ -1,0 +1,6 @@
+python-dotenv  # To load API keys securely
+requests       # For making API requests (Steam, Apify, etc.)
+nltk           # Natural Language Toolkit for text processing
+transformers   # Hugging Face AI for text summarization
+torch          # Required for some Hugging Face models
+Flask          # Optional: To display results in a web app
