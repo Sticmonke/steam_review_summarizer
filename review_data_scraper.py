@@ -39,3 +39,22 @@ def load_review_data (game_id: str, params: Dict) -> Dict:
         return {"success": 2}
 
     return user_reviews
+
+def retrieve_reviews (review_data: Dict) -> list:
+
+    """
+    Extracts the list of reviews from a dictionary of review data.
+
+    Parameters:
+    review_data (Dict): A dictionary containing review data, expected to have a 'reviews' key with a list of reviews.
+
+    Returns:
+    list: A list of reviews (strings) extracted from the 'reviews' key in the input dictionary.
+    """
+    
+    review_list = [review['review'] for review in review_data['reviews']]
+
+    return review_list
+
+if __name__ == '__main__':
+    None
